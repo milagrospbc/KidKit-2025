@@ -408,3 +408,11 @@ img.rounded-circle {
     color: #003A87;;
     line-height: 1.6;
 }
+.etiqueta{
+  background-color: #E76C0F;
+  font-weight: 300;
+}
+.btndos{
+  /* background-color: #d68140; */
+  color: #f5f5f5;
+}

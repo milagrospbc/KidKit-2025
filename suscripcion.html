@@ -4,7 +4,7 @@
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid Kit | Home</title>
+    <title>Plan Aventurero | KidKit</title>
 
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Tilt+Warp&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
 <!-- NAVBAR: Menú de navegación fijo superior -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
@@ -39,7 +39,7 @@
       <ul class="navbar-nav">
         <!-- acá se puede agregar al class un active -->
         <li class="nav-item"><a class="nav-link " href="#">¿Cómo funciona?</a></li> 
-        <li class="nav-item"><a class="nav-link" href="#suscripciones">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
         <li class="nav-item"><a class="nav-link" href="#">PequeSwap</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
       </ul>
@@ -48,22 +48,25 @@
 </nav>
 <!-- /NAVBAR -->
 
-<!-- HERO: Sección de portada con llamado a la acción -->
+<!-- HERO PAG DETALLE
+HERO: Sección de portada con llamado a la acción -->
 <section class="section-spacing container-fluid d-flex align-items-center justify-content-between herokid" style="min-height: 100vh; padding-top: 100px; width: 100;">
   <div class="row align-items-center">
+      <!-- Imagen destacada -->
+      <div class="col-lg-5 text-center">
+        <!-- <img src="https://imageplaceholder.net/500x500" class="img-fluid img-rounded" alt="Imagen Hero"> -->
+         <img src="imagenes/imgdetallehero.png" class="img-fluid" alt="caja azul Plan Aventurero" style="width: 75%;">
+      </div>
     <!-- Texto principal -->
     <div class="col-lg-6" >
-      <h1 class="h1-custom">Aventuras <br> todos los meses</h1>
-      <p class="p-custom phero">Descubrí KidKit, la suscripción quincenal que transforma el juego en una aventura de aprendizaje</p>
+      <h5 class="text-uppercase"><span class="badge ms-2 etiqueta">Más elegido</span></h5>  
+      <h1 class="h1-custom">Plan Aventurero</h1>
+      <p class="p-custom phero">Descubrí por qué es el más elegido entre las familias KidKit. Lo recibis cada 15 días con todos los materiales, con envío gratis a todo el país, contenido exclusivo para padres y nuestra revista digital llena de ideas.<br><strong>¡Convertite en un verdadero aventurero junto a tus hijos!</strong></p>
+      <p class="display-6 phero">$35.000 <small>/ mes</small></p>
       <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark">Descubrir más</a>
-        <!-- <a href="#" class="btn btn-outline-dark">Acción Secundaria</a> -->
+        <a href="#" class="btn btn-dark">Quiero mi kit</a>
+        <a href="#" class="btn btn-outline-dark btndos">Descubrir más</a>
       </div>
-    </div>
-    <!-- Imagen destacada -->
-    <div class="col-lg-6 text-center">
-      <!-- <img src="https://imageplaceholder.net/500x500" class="img-fluid img-rounded" alt="Imagen Hero"> -->
-       <img src="imagenes/heroimg (1).png" class="img-fluid" alt="mano sosteniendo caja de kidkit">
     </div>
   </div>
 </section>
@@ -324,7 +327,7 @@
 <!-- /TESTIMONIALS -->
 
 <!-- GALERÍA A: Grid clásico de 3 columnas -->
-<section class="section-spacing container py-5 text-center">
+<!-- <section class="section-spacing container py-5 text-center">
   <h2 class="mb-4" class="h2-custom">Galería de imágenes</h2>
   <p class="mb-5">Una estructura simple para mostrar imágenes de manera ordenada.</p>
   <div class="row g-4">
@@ -332,10 +335,10 @@
     <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
     <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
   </div>
-</section>
+</section> -->
 
 <!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
-<section class="section-spacing container py-5">
+<!-- <section class="section-spacing container py-5">
   <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
   
   <div class="masonry__container">
@@ -348,7 +351,7 @@
     <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
     <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
   </div>
-</section>
+</section> -->
 
 <!-- GALERÍA C: Carrusel horizontal con tarjetas -->
 <section class="section-spacing container py-5 text-center">
@@ -385,48 +388,6 @@
     </button>
   </div>
 </section>
-
-
-<!-- GALERÍA D: Carrusel con imagen + texto encima -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería con textos</h2>
-  <div id="carouselGaleriaD" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 1</h4>
-              <p class="lead-custom">Descripción breve sobre esta imagen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 2">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 2</h4>
-              <p class="lead-custom">Otra descripción diferente para esta imagen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
 
 <!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
 <section class="section-spacing container py-5 text-center">
@@ -469,11 +430,11 @@
 </section>
 
 <!-- CTA: Llamado a la acción final -->
-<section class="section-spacing container text-center my-5">
+<!-- <section class="section-spacing container text-center my-5">
   <h2 class="h2-custom">¿Listo para empezar?</h2>
   <p class="p-custom">Texto para motivar acción.</p>
   <a href="#" class="btn btn-dark mt-4">Comenzá Ahora</a>
-</section>
+</section> -->
 <!-- /CTA -->
 
 <!-- PRICING: Tabla de precios o planes -->
@@ -521,131 +482,8 @@
 </section>
 <!-- /PRICING -->
 
-<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="section-spacing container text-center" id="suscripciones">
-  <h2 class="h2-custom">Planes de Suscripción</h2>
-  <p class="p-custom">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
-  
-  <div class="row mt-5">
-    
-    <!-- Card: Plan Básico -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Básico</h5>
-        <p class="display-6 text-primary">$49.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Básico">
 
-        <!-- Descripción -->
-        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Acceso limitado a contenido</li>
-          <li>✔ Soporte básico</li>
-          <li>✔ Recursos descargables</li>
-          <li>✔ Actualizaciones mensuales</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="suscripcion.html" class="btn btn-primary mt-3" target="_blank">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Pro (Recomendado) -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100 border border-primary">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Pro <span class="badge bg-primary ms-2">Recomendado</span></h5>
-        <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Pro">
-
-        <!-- Descripción -->
-        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan básico</li>
-          <li>✔ Soporte prioritario</li>
-          <li>✔ Acceso a workshops</li>
-          <li>✔ Herramientas premium</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="suscripcion.html" class="btn btn-primary mt-3" target="_blank">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Full -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Full</h5>
-        <p class="display-6 text-primary">$60.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Full">
-
-        <!-- Descripción -->
-        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan Pro</li>
-          <li>✔ Consultorías personalizadas</li>
-          <li>✔ Acceso anticipado a lanzamientos</li>
-          <li>✔ Certificados exclusivos</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="suscripcion.html" class="btn btn-primary mt-3" target="_blank">Elegir plan</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- /PLANES DE SUSCRIPCIÓN -->
-
-<!-- FAQS: Preguntas frecuentes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Preguntas Frecuentes</h2>
-  <p class="p-custom">Respuestas a dudas comunes.</p>
-  <div class="accordion mt-5" id="faqAccordion">
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /FAQS -->
-
-<!-- preguntas frecuentes segunda opcion -->
+<!-- preguntas frecuentes opcion detalle -->
   <div class="faq-container container text-center ">
         <h2>Preguntas Frecuentes</h2>
 
