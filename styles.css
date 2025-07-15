@@ -13,6 +13,8 @@ body {
   font-family: "Red Hat Text", sans-serif;
   /* color: #003A87; */
   background-color: #ffffff;
+  /* por ahora cambio todo el color al body, despues veo detalle */
+  background-color: #5954EC;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -49,7 +51,10 @@ body {
 
 /* 4. HERO */
 .herokid {
-  background-color: #5954EC;
+  background-image: url(imagenes/back-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #5954EC; */
   /* margin-inline: 0; */
   width: 100%;
   padding-left: 8rem;
@@ -63,10 +68,11 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "Tilt Warp", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.2;
   color: #e76c0f;
-  /* letter-spacing: 1.5px; */
+  color: #f5f5f5;
+  /* letter-spacing: 1.2px; */
 }
 
 h1 {
@@ -121,14 +127,6 @@ section h2 {
   position: relative;
 }
 
-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
-}
 
 /* 6. CARDS */
 .card {
@@ -227,7 +225,7 @@ img.rounded-circle {
 
 .h2-custom {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.3;
   /* color: var(--dark-color); */
 }
@@ -247,8 +245,9 @@ img.rounded-circle {
 
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
-  font-size: 1rem;
-  color: var(--secondary-color);
+  font-size: 1.5rem;
+  /* color: var(--secondary-color); */
+  color: #f5f5f5;
   line-height: 1.6;
 }
 .phero{
@@ -287,7 +286,7 @@ img.rounded-circle {
 /* TEXTOS ADICIONALES */
 .text-uppercase-custom {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 
 .text-bold {
@@ -415,4 +414,22 @@ img.rounded-circle {
 .btndos{
   /* background-color: #d68140; */
   color: #f5f5f5;
+}
+.linea {
+  background-image: linear-gradient(to bottom, transparent 60%, #FEC525 40%); /* Green highlight */
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em; /* Adjust height of the highlight */
+  background-position: 0 100%; /* Position at the bottom */
+  padding-bottom: 0; /* Adjust to make space for the highlight */
+}
+.sect2{
+  background-color: #5954EC;
+}
+.count{
+  height: 60%;
+}
+.sect2 p{
+  padding-inline: 2em;
+  margin-top: 0.5em;
+  font-size: 1.5rem;
 }
