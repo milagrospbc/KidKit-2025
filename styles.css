@@ -25,6 +25,7 @@ body {
   background-color: whitesmoke;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
+  font-family: "Tilt Warp", sans-serif;
 }
 
 .navbar.scrolled {
@@ -144,7 +145,7 @@ section h2 {
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--dark-color);
+  /* color: var(--dark-color); */
 }
 
 .masonry__container {
@@ -178,7 +179,8 @@ form .form-control {
 }
 
 form button.btn-primary {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: #E76C0F;
   border: none;
   width: 100%;
   border-radius: 50px;
@@ -204,10 +206,10 @@ img.rounded-circle {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.container .row img:hover {
+/* .container .row img:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -247,7 +249,7 @@ img.rounded-circle {
 
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
-  font-size: 1.5rem;
+  font-size: 1rem;
   /* color: var(--secondary-color); */
   color: #f5f5f5;
   line-height: 1.6;
@@ -345,21 +347,26 @@ img.rounded-circle {
 /* AGREGADOOOOS */
 /* preguntas frecuentes segunda opcion */
 .faq-container {
-    /* background-color: #fff; */
+    background-color: #fff;
     padding: 30px;
-    /* border-radius: 8px; */
+    /* border-radius: 34px; */
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-    max-width: 800px;
+    /* max-width: 800px; */
     width: 100%;
 }
 .faq-container h2{
+  color: #E76C0F;
   margin-bottom: 3rem;
 }
-
+.preg{
+  text-align: center;
+  width: 80%;
+}
 .faq-item {
     border: 1px solid #E76C0F;
     border-radius: 5px;
     margin-bottom: 10px;
+    /* width: 80%; */
     overflow: hidden; /* Importante para el efecto de colapso */
 }
 
@@ -368,7 +375,7 @@ img.rounded-circle {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     cursor: pointer;
     /* border-bottom: 1px solid #E76C0F; */
 }
@@ -398,7 +405,7 @@ img.rounded-circle {
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transición suave */
     padding: 0 20px; /* Padding inicial cero */
-    background-color: #f9f9f9;
+    background-color: whitesmoke;
 }
 
 .faq-item.active .faq-answer {
@@ -624,5 +631,305 @@ img.rounded-circle {
   background-size: cover;
   width: 100%;
   /* background-repeat: repeat; */
-  /* background-color: #f9f9f9; */
+  background-color: #ffffff;
+}
+.cajacontacto{
+ background-color: #ffffff;
+ border-radius: 34px;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+ width: 75%;
+ border: 1px solid #E76C0F;
+
+}
+.contacto h2{
+  color: #E76C0F;
+}
+.tituloplan{
+  color: #E76C0F;
+}
+
+.ultsecthome{
+  background-color: #FEC525;
+  padding: 2rem;
+}
+.ultsecthome h3{
+  color: #003A87;
+}
+.ultsecthome .btn{
+  background-color: var(--primary-color);
+  border: 0;
+} 
+.galeriahome{
+  background-color: #FEC525;
+  padding-inline: 3rem;
+}
+.titulonaranja{
+  color: #E76C0F;
+}
+
+/* Variables CSS */
+:root {
+    --orange-bg: #FF8C00; /* Naranja de fondo */
+    --card-bg: #FFFFFF; /* Fondo de las cards */
+    --card-border-color: #DDD; /* Borde de las cards */
+    --text-color: #333; /* Color de texto general */
+    --title-color: #1A2A5A; /* Color del título principal */
+    --button-bg: #FF8C00; /* Fondo del botón */
+    --button-text-color: #FFFFFF; /* Texto del botón */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* O la fuente que uses en tu proyecto */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--orange-bg); /* Fondo de toda la sección */
+}
+
+/* Estilos de la sección principal */
+.kidkit-section {
+    padding: 40px 20px; /* Padding para toda la sección */
+    text-align: center;
+}
+
+.section-title {
+    color: var(--card-bg); /* Color blanco para el título principal */
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las cards */
+.cards-container {
+    display: grid;
+    gap: 30px; /* Espacio entre las cards */
+    max-width: 1200px; /* Ancho máximo del contenedor de cards */
+    margin: 0 auto; /* Centrar el contenedor */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho en desktop */
+    align-items: start; /* Alinea las cards a la parte superior */
+}
+
+/* Estilos base para todas las cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border-color);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex; /* Usamos flexbox dentro de cada card para el contenido */
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente por defecto */
+}
+
+.card h3 {
+    color: var(--title-color);
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* === CARD 1: Benefits === */
+.card-benefits {
+    position: relative; /* Para posicionar la mano */
+}
+
+.hand-icon-desktop {
+    position: absolute;
+    top: 50%;
+    left: -100px; /* Ajusta esto para mover la mano más a la izquierda/derecha */
+    transform: translateY(-50%);
+    width: 100px; /* Ancho de la imagen de la mano */
+    height: auto;
+    z-index: 1; /* Asegura que la mano esté sobre el fondo naranja */
+}
+.hand-icon-desktop img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto en mobile/colapsado */
+    gap: 20px; /* Espacio entre items de beneficio */
+    width: 100%; /* Ocupa todo el ancho de la card */
+    padding-top: 20px; /* Espacio superior para el título invisible en mobile */
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column; /* Apila icono y texto */
+    align-items: center;
+    text-align: center;
+}
+
+.benefit-item img {
+    width: 50px; /* Tamaño del icono */
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+/* Si usas Font Awesome, estos estilos serían para .benefit-icon */
+.benefit-item .benefit-icon {
+    font-size: 3em; /* Tamaño de los iconos de Font Awesome */
+    color: var(--orange-bg); /* Color de los iconos */
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* === CARD 2: Discounts === */
+.card-discounts {
+    justify-content: space-between; /* Espacio entre título y logos */
+}
+
+.card-discounts h3 {
+    text-align: center;
+}
+
+.discount-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+    gap: 15px; /* Espacio entre logos */
+    width: 100%;
+    justify-items: center; /* Centra los logos dentro de sus celdas */
+    align-items: center;
+}
+
+.logo-item img {
+    max-width: 60px; /* Tamaño máximo del logo */
+    height: auto;
+    border-radius: 50%; /* Si quieres que los logos sean redondos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para los logos */
+}
+
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Mismo tamaño que los logos */
+    height: 60px;
+    border: 2px solid var(--orange-bg); /* Borde para el signo más */
+    border-radius: 50%;
+    font-size: 2em;
+    color: var(--orange-bg);
+    font-weight: bold;
+}
+
+/* === CARD 3: PequeSwap === */
+.card-pequeswap {
+    justify-content: space-between; /* Distribuye el espacio entre título, párrafo y botón */
+}
+
+.card-pequeswap h3 {
+    text-align: center;
+}
+
+.card-pequeswap p {
+    font-size: 0.95em;
+    margin-bottom: 25px; /* Espacio antes del botón */
+    text-align: center; /* Centra el texto del párrafo */
+}
+
+.pequeswap-button {
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 25px; /* Bordes redondeados para el botón */
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que el texto del botón se rompa */
+}
+
+.pequeswap-button:hover {
+    background-color: #E07B00; /* Un tono más oscuro al pasar el mouse */
+}
+
+
+/* ============================================== */
+/* MEDIA QUERIES para Responsividad      */
+/* ============================================== */
+
+/* Para tablets y pantallas intermedias (Horizontal / Vertical) */
+@media (max-width: 992px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Una columna por card en tablets */
+        gap: 25px; /* Reduce un poco el espacio */
+    }
+
+    /* Ocultar la mano en móvil y tablet */
+    .hand-icon-desktop {
+        display: none;
+    }
+
+    /* Ajustes para la primera card */
+    .card-benefits .benefits-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas de iconos en tablets */
+        gap: 15px;
+    }
+
+    /* Ajustes para la segunda card */
+    .discount-logos-grid {
+        grid-template-columns: repeat(3, 1fr); /* Mantener 3 columnas de logos */
+    }
+}
+
+/* Para pantallas de celular */
+@media (max-width: 576px) {
+    .kidkit-section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 1.7em;
+        margin-bottom: 30px;
+    }
+
+    .cards-container {
+        gap: 20px; /* Espacio más pequeño entre cards */
+    }
+
+    .card {
+        padding: 20px; /* Menor padding en cards */
+    }
+
+    .card h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    /* Primera Card: Apila los beneficios */
+    .card-benefits .benefits-grid {
+        grid-template-columns: 1fr; /* Una columna por item en celulares */
+        gap: 15px;
+    }
+
+    /* Segunda Card: Apila los logos */
+    .discount-logos-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de logos para móviles */
+        gap: 10px;
+    }
+    .logo-item img, .plus-icon {
+        max-width: 50px; /* Reduce el tamaño de los logos/iconos */
+        height: 50px;
+    }
+    .plus-icon {
+        font-size: 1.8em;
+    }
+
+    /* Tercera Card: Ajustes para el botón */
+    .card-pequeswap p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    .pequeswap-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
 }
