@@ -933,14 +933,20 @@ body {
         font-size: 0.9em;
     }
 }
-
 .cajashadow{
   box-shadow: 8px 8px 1px 0px rgba(67,63,188,1);
 -webkit-box-shadow: 8px 8px 1px 0px rgba(67,63,188,1);
 -moz-box-shadow: 8px 8px 1px 0px rgba(67,63,188,1);
 }
-
 .precio{
   font-family: "Tilt Warp", sans-serif;
   color: #1A2A5A;
 }
+.preciodos{
+  font-family: "Tilt Warp", sans-serif;
+}
+.recibir{
+  background-image: url(imagenes/fondoamarillo.jpg);
+  padding-inline: 3rem;
+}
+
