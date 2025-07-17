@@ -112,7 +112,7 @@ p {
 
 .btn-outline-dark:hover {
   background-color: var(--primary-color);
-  
+
   color: #fff;
 }
 
@@ -187,9 +187,11 @@ form button.btn-primary {
 
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
-  color: #ffffff;
+  /* background-color: var(--dark-color); */
+  background-color: whitesmoke;
+  color: #003A87;
   font-size: 0.9rem;
+  flex-direction: row;
 }
 
 /* 10. IMÁGENES */
@@ -318,7 +320,7 @@ img.rounded-circle {
     font-size: 2.5rem;
   }
   /*.navbar-brand {
-     font-size: 1.5rem; 
+     font-size: 1.5rem;
   }*/
 }
 
@@ -340,6 +342,7 @@ img.rounded-circle {
   }
 }
 
+/* AGREGADOOOOS */
 /* preguntas frecuentes segunda opcion */
 .faq-container {
     /* background-color: #fff; */
@@ -395,6 +398,7 @@ img.rounded-circle {
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transición suave */
     padding: 0 20px; /* Padding inicial cero */
+    background-color: #f9f9f9;
 }
 
 .faq-item.active .faq-answer {
@@ -432,4 +436,193 @@ img.rounded-circle {
   padding-inline: 2em;
   margin-top: 0.5em;
   font-size: 1.5rem;
+}
+
+.main-footer {
+    padding: 20px 0; /* Padding vertical para todo el footer */
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-top-border {
+    width: 100%;
+    height: 5px; /* Altura de la línea azul */
+    background-color: var(--primary-blue);
+    margin-bottom: 20px; /* Espacio entre la línea y el contenido */
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    max-width: 1200px; /* Ancho máximo para el contenido del footer */
+    margin: 0 auto; /* Centra el contenido del footer */
+    padding: 0 20px; /* Padding horizontal interno */
+}
+
+/* Estilos del logo */
+.footer-logo {
+    flex-basis: 20%; /* Ocupa el 20% del espacio en escritorio */
+    text-align: left;
+    display: flex; /* Para centrar verticalmente la imagen si el wrapper es más alto */
+    align-items: center;
+    min-width: 150px; /* Para evitar que el logo se haga demasiado pequeño */
+}
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de la navegación del footer */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas de navegación se envuelvan */
+    justify-content: space-around;
+    flex-grow: 1; /* Permite que ocupe el espacio restante */
+    max-width: 60%; /* Para que no se estire demasiado en escritorio */
+    margin-left: 20px; /* Espacio entre el logo y las columnas de navegación */
+}
+
+.footer-column {
+    flex: 1 1 auto; /* Permite crecer y encoger, base automática */
+    min-width: 120px; /* Ancho mínimo para cada columna */
+    text-align: left;
+    margin-bottom: 15px; /* Espacio entre columnas en mobile */
+}
+
+.footer-column h4 {
+    color: var(--primary-blue);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1em;
+    white-space: nowrap; /* Evita que los títulos se rompan en varias líneas */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: var(--primary-blue); /* Color al pasar el mouse */
+}
+
+/* Estilos de las redes sociales */
+.footer-social {
+    flex-basis: 15%; /* Ocupa el 15% del espacio en escritorio */
+    text-align: right;
+    min-width: 150px;
+}
+
+.footer-social h4 {
+    color: var(--primary-blue);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinea los iconos a la derecha en escritorio */
+    gap: 10px; /* Espacio entre iconos */
+}
+
+
+/* ============================================== */
+/* MEDIA QUERIES para Responsividad      */
+/* ============================================== */
+
+/* Para tablets y pantallas un poco más grandes que móviles (ej. hasta 768px) */
+@media (max-width: 992px) {
+    .footer-content-wrapper {
+        flex-direction: column; /* Apila los elementos: logo, nav, social */
+        align-items: center; /* Centra los elementos */
+        padding: 0 15px;
+    }
+
+    .footer-logo,
+    .footer-nav,
+    .footer-social {
+        flex-basis: auto; /* Dejan de tener un ancho fijo */
+        width: 100%; /* Ocupan todo el ancho disponible */
+        margin-left: 0; /* Elimina el margen lateral del nav */
+        margin-bottom: 25px; /* Espacio entre las secciones apiladas */
+        text-align: center; /* Centra el texto y los elementos */
+    }
+
+    .footer-logo img {
+        margin: 0 auto; /* Centra la imagen del logo */
+    }
+
+    .footer-nav {
+        justify-content: center; /* Centra las columnas de navegación */
+    }
+
+    .footer-column {
+        min-width: 150px; /* Puedes ajustar este mínimo si es necesario */
+        text-align: center; /* Centra el texto de las columnas */
+    }
+
+    .footer-column h4 {
+        margin-bottom: 15px; /* Más espacio para los títulos */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los iconos sociales */
+    }
+}
+
+/* Para pantallas de celular (ej. hasta 576px) */
+@media (max-width: 576px) {
+    .main-footer {
+        padding: 15px 0;
+    }
+
+    .footer-top-border {
+        margin-bottom: 15px;
+    }
+
+    .footer-content-wrapper {
+        padding: 0 10px;
+    }
+
+    .footer-logo,
+    .footer-nav,
+    .footer-social {
+        margin-bottom: 20px; /* Reduce un poco el espacio entre bloques */
+    }
+
+    .footer-nav {
+        flex-direction: column; /* Apila las columnas de navegación una debajo de la otra */
+    }
+
+    .footer-column {
+        width: 100%; /* Cada columna ocupa todo el ancho */
+        margin-bottom: 15px; /* Espacio entre columnas apiladas */
+    }
+    .footer-column h4 {
+        margin-bottom: 10px;
+    }
+}
+
+.contacto{
+  background-image: url(imagenes/backgroundcontactoo.png);
+  background-size: cover;
+  width: 100%;
+  /* background-repeat: repeat; */
+  /* background-color: #f9f9f9; */
 }
