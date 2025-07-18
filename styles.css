@@ -167,7 +167,6 @@ section h2 {
 /* 7. TESTIMONIOS */
 .blockquote {
   background-color: var(--light-color);
-  border-left: 4px solid var(--primary-color);
   padding: 20px;
   border-radius: 5px;
 }
@@ -945,8 +944,39 @@ body {
 .preciodos{
   font-family: "Tilt Warp", sans-serif;
 }
+.obtenerdetalle{
+  background-color: #FEC525;
+}
+.obtenerdetalle h2{
+  color: #E76C0F;
+}
+.preciosdetalle{
+  background-color: #FEC525;
+  padding: 2rem;
+}
+.preciosdetalle h2{
+  color: #E76C0F;
+}
+
 .recibir{
   background-image: url(imagenes/fondoamarillo.jpg);
   padding-inline: 3rem;
+}
+.recibir h2{
+  color: #E76C0F;
+}
+
+.galeriadetalle{
+  background-color: white;
+}
+.comentarios{
+  padding: 2rem;
+  background-color: white;
+}
+.comentariostext{
+  color:#003A87;
+}
+.comentarios h2{
+  color: #E76C0F;
 }
 
