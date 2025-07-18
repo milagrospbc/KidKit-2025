@@ -320,6 +320,10 @@ img.rounded-circle {
   h1 {
     font-size: 2.5rem;
   }
+  .herokid {
+        padding-left: 50px; /* Un padding más razonable para móviles */
+        padding-right: 50px; /* Y asegúrate de tener padding a la derecha también */
+  }
   /*.navbar-brand {
      font-size: 1.5rem;
   }*/
@@ -683,7 +687,8 @@ body {
     font-family: Arial, sans-serif; /* O la fuente que uses en tu proyecto */
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--orange-bg); /* Fondo de toda la sección */
+    /* background-color: var(--orange-bg);  */
+    /* Fondo de toda la sección */
 }
 
 /* Estilos de la sección principal */
