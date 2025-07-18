@@ -1,7 +1,7 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
   --primary-color: #E76C0F;
-  --secondary-color: #6c757d;
+  --secondary-color: #003A87;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   /* --dark-color: #003A87; */
@@ -85,7 +85,7 @@ h1 {
 
 p {
   font-size: 1rem;
-  color: #6c757d;
+  color: #003A87
 }
 
 /* Botones */
@@ -161,7 +161,7 @@ section h2 {
 }
 
 .card-text {
-  color: #6c757d;
+  color: #003A87
 }
 
 /* 7. TESTIMONIOS */
@@ -974,7 +974,7 @@ body {
   background-color: white;
 }
 .comentariostext{
-  color:#003A87;
+  color:#003A87
 }
 .comentarios h2{
   color: #E76C0F;
